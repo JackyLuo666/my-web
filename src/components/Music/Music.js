@@ -5,8 +5,6 @@ import './Music.css'
 import music from '../../assets/music/周杰伦 - 以父之名.mp3'
 import music1 from '../../assets/music/马赛克乐队 - 霓虹甜心.mp3'
 import music2 from '../../assets/music/明智之举 - 许嵩.mp3'
-
-import './Music.config.js'
 export default class Music extends React.Component {
     componentDidMount() {
         let options = {

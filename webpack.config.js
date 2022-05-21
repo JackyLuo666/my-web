@@ -2,7 +2,7 @@ const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./src/entry/index.js",
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, './build'),
@@ -39,7 +39,7 @@ module.exports = {
                 loader: "url-loader",
                 options: {
                     name: "[name].[hash:5].[ext]",
-                    limit: 1024 * 8, // size <= 1kib
+                    limit: 1024 * 8, // size <= 1kb
                 }
             }
         ]
@@ -51,7 +51,7 @@ module.exports = {
         })
     ],
     devServer: {
-        open: true,
+        open: true,//自动打开浏览器
         port: 80,//在http协议中，如果端口号是80，可以省略。自己可以定义其他端口号
         host: '127.0.0.1'//指定运行时的主机
     },
