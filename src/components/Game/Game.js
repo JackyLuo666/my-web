@@ -1,6 +1,6 @@
 import { findAllByAltText } from '@testing-library/react';
 import React from 'react';
-import './Game.css'
+import './Game.scss'
 
 export default class Game extends React.Component {
     constructor(props) {
