@@ -23,14 +23,16 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                use: ['style-loader',
+                    "css-loader"
+                ],
             },
             {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ['style-loader', "css-loader", 'sass-loader']
             },
             {
-                test: /\.mp3$/,
+                test: /\.(mp3|mp4)$/,
                 use: 'file-loader'
             },
             {

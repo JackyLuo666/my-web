@@ -11,7 +11,6 @@ export default class Md extends React.Component {
     }
     render() {
         return (<div className='mdroot'>
-            <div></div>
             <ReactMarkdown
                 children={sassMd}
                 remarkPlugins={[remarkGfm]}

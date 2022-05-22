@@ -17,6 +17,7 @@ export default class Game extends React.Component {
     }
     componentDidMount() {
         document.addEventListener('keydown', this.handleKeyDown);
+
         setInterval(() => {
             if (520 > this.treeRef.current.offsetLeft && this.treeRef.current.offsetLeft > 500 && -50 < this.playerRef.current.offsetTop) {
                 this.setState({
@@ -38,6 +39,7 @@ export default class Game extends React.Component {
         }, 20);
     }
     handleKeyDown = (e) => {
+        e.preventDefault();
         if (e.keyCode === 32) {
             if (this.ifJump) {
                 this.jump()
