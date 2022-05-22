@@ -34,6 +34,10 @@ module.exports = {
                 use: 'file-loader'
             },
             {
+                test: /\.md$/,
+                loader: 'raw-loader'
+            },
+            {
                 test: /\.(jpg|png|gif)$/,
                 dependency: { not: ['url'] },
                 loader: "url-loader",

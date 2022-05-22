@@ -6,11 +6,12 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
-    "aplayer": "^1.10.1",
     "D": "^1.0.0",
+    "aplayer": "^1.10.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "tocmd": "^1.0.1",
     "web-vitals": "^2.1.4",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2"
@@ -49,10 +50,14 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "raw-loader": "^4.0.2",
+    "react-markdown": "^8.0.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^3.0.1",
     "sass": "^1.52.1",
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1",
-    "url-loader": "^4.1.1",
-    "webpack-dev-server": "^4.9.0"
+    "url-": "^4.1.1",
+    "webpack-dev-serverloader": "^4.9.0"
   }
 }
