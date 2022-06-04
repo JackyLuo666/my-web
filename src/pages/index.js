@@ -12,7 +12,7 @@ export default class App extends React.Component {
     return (
       <div className='app-root'>
         {/* <Top></Top> */}
-        <Game></Game>
+        {/* <Game></Game> */}
         <Md></Md>
         <Music></Music>
       </div>
