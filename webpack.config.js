@@ -23,13 +23,11 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader',
-                    "css-loader"
-                ],
+                use: ['style-loader', "css-loader", 'postcss-loader'],
             },
             {
                 test: /\.scss$/,
-                use: ['style-loader', "css-loader", 'sass-loader']
+                use: ['style-loader', "css-loader", 'sass-loader', 'postcss-loader']
             },
             {
                 test: /\.(mp3|mp4)$/,
@@ -58,7 +56,7 @@ module.exports = {
     ],
     devServer: {
         open: true,//自动打开浏览器
-        port: 80,//在http协议中，如果端口号是80，可以省略。自己可以定义其他端口号
+        port: 3000,//在http协议中，如果端口号是80，可以省略。自己可以定义其他端口号
         host: '127.0.0.1'//指定运行时的主机
     },
     //用来设置引用模块
